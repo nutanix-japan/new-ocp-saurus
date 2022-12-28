@@ -61,11 +61,27 @@ All lab durations are estimates. Actual duration will depend on your familiarity
 -   Optional Labs
     -   OCP: Deploy second OCP cluster using Calm
     -   OCP: Provisioning storage to OCP Image Registry
+
+## Lab Flow 
+
+
+import { Mermaid } from 'mdx-mermaid/Mermaid'
+
+<Mermaid chart={`stateDiagram-v2
+    Start --> IPI
+    IPI --> CSI
+    CSI --> NDB
+    Start --> Assisted
+
+    `} />
+
+
 ## Initial Setup
 
 -   Take note of the *Passwords* being used from you RX reservation details
 -   Log into your virtual desktops (connection info below)
 -   Login to Global Protect VPN if you have access
+
 ## Cluster Assignment
 
 The instructor will inform the attendees of their assigned clusters.
